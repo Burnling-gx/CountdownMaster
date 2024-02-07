@@ -52,7 +52,7 @@
 
 ### 1.7 开源许可
 
-程序采用 GPL 开源许可。详情请查看 [LICENSE](https://github.com/Burnling-gx/CountdownMaster/blob/master/LICENSE) 文件。
+程序采用 MIT 开源许可。详情请查看 [LICENSE](https://github.com/Burnling-gx/CountdownMaster/blob/master/LICENSE) 文件。
 
 [Github 仓库地址](https://github.com/Burnling-gx/CountdownMaster)
 
