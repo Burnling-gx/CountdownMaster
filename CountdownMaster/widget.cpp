@@ -24,17 +24,6 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // QSystemTrayIcon *systemIcon = new QSystemTrayIcon(this);
-    // systemIcon->setIcon(QIcon(":/ico/logo.ico"));
-
-    // QMenu *menu = new QMenu();
-    // QAction *_exit = new QAction("退出程序");
-    // menu->addAction(_exit);
-    // systemIcon->setContextMenu(menu);
-
-    // QObject::connect(_exit, &QAction::triggered, quit());
-    // systemIcon->show();
-
     init_functions();
     this->resize(screenWidth,screenHeight);
 

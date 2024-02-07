@@ -18,20 +18,16 @@ int main(int argc, char *argv[])
     w.setAttribute(Qt::WA_TranslucentBackground);
     w.show();
 
-    // 创建系统托盘图标
     QSystemTrayIcon *trayIcon = new QSystemTrayIcon;
     trayIcon->setIcon(QIcon(":/ico/logo.ico"));
 
-    // 创建托盘图标菜单
     QMenu *trayIconMenu = new QMenu;
     QAction *exitAction = new QAction("退出程序", &a);
     QObject::connect(exitAction, &QAction::triggered, &a, &QApplication::quit);
     trayIconMenu->addAction(exitAction);
 
-    // 将菜单设置给托盘图标
     trayIcon->setContextMenu(trayIconMenu);
 
-    // 显示系统托盘图标
     trayIcon->show();
 
     return a.exec();
