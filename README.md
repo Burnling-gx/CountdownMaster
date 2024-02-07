@@ -1,7 +1,9 @@
 ## 写在前面
 
 无论您是否使用过 v1.x 版本的 CountdownMaster，都建议您下载最新版。
+
 下面的写的挺长，建议您直接前往 **[1.5 更新内容](#1.5-更新内容)**、**[2. 下载与安装](#2-下载与安装)**。
+
 使用 Qt 重写了整个程序，程序的各方面都有显著提升。
 
 ## 目录
@@ -37,17 +39,21 @@
 ### 1.5 更新内容
 
 - **更小的体积：** 安装后约 11MB。
+
 - **更多的功能：** 支持**单独**自定义**每个事件**的背景颜色、字体、字号、文字颜色、边框效果等。
+
 - **更完善的支持：** 安装后程序文件夹下自带 `CountdownMaster-Configurator.exe` 用于编写配置，自带 `shutdownApp.exe` 用于强制关闭程序。
 
 ### 1.6 版本信息
 
 - **当前版本：** 2.0.0
+
 - **发布日期：** 2024-02-07
 
 ### 1.7 开源许可
 
 程序采用 GPL 开源许可。详情请查看 [LICENSE](https://github.com/Burnling-gx/CountdownMaster/blob/master/LICENSE) 文件。
+
 [Github 仓库地址](https://github.com/Burnling-gx/CountdownMaster)
 
 
@@ -56,6 +62,7 @@
 ### 2.1 下载安装包
 
 最新版安装包可从网盘下载：[网盘链接](https://wwb.lanzoul.com/b00s6ol3i) 密码：52pj
+
 也可以从 [Github Release](https://github.com/Burnling-gx/CountdownMaster/releases/tag/v2.0) 页面下载。
 
 建议下载 `setup.exe` ，可以直接设置开机自启。
@@ -103,11 +110,9 @@
 
 ### 3.6 关闭程序
 
-  右键托盘内图标，点击 “退出程序” 即可关闭程序。
-        
-  文件夹内自带 `shutdownApp.exe` ，双击运行即可关闭倒数日程序。
+右键托盘内图标，点击 “退出程序” 即可关闭程序。
 
-
+文件夹内自带 `shutdownApp.exe` ，双击运行即可关闭倒数日程序。
 
 ## 4. 高级用法
 
