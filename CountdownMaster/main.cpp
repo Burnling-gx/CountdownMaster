@@ -8,6 +8,7 @@
 #include <QSystemTrayIcon>
 #include <QMenu>
 #include <QAction>
+#include <QFile>
 
 int main(int argc, char *argv[])
 {

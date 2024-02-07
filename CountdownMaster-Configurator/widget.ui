@@ -299,7 +299,7 @@
     <rect>
      <x>10</x>
      <y>600</y>
-     <width>270</width>
+     <width>130</width>
      <height>40</height>
     </rect>
    </property>
@@ -310,7 +310,26 @@
     </font>
    </property>
    <property name="text">
-    <string>添加新的事件</string>
+    <string>添加事件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_del">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>600</y>
+     <width>130</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>删除事件</string>
    </property>
   </widget>
  </widget>

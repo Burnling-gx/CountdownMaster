@@ -112,3 +112,11 @@ void Widget::on_pushButton_new_clicked()
     ui->tableWidget->setItem(eventNum,0,_item_eventName);
     ui->tableWidget->setCellWidget(eventNum,1,dateEdit);
 }
+
+void Widget::on_pushButton_del_clicked()
+{
+    int nowRow = ui->tableWidget->currentRow();
+    ui->tableWidget->removeRow(nowRow);
+}
+
+
