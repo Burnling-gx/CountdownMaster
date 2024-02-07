@@ -47,7 +47,7 @@
 
 ### 2.1 下载安装包
 
-最新版安装包可从网盘下载：[网盘链接](https://wwb.lanzoul.com/b00s6karc) 密码：52pj
+最新版安装包可从网盘下载：[网盘链接](https://wwb.lanzoul.com/iHbC51nmagoh) 密码：52pj
 
 也可以从 [Github Release](https://github.com/Burnling-gx/CountdownMaster/releases/tag/v2.0) 页面下载。
 
