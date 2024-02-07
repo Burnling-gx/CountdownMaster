@@ -20,7 +20,6 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
-
     init_functions();
 
     int eventWidgetWidth = 100 * widthFactor;
