@@ -79,7 +79,7 @@ void Widget::on_pushButton_save_clicked()
         QString eventName = tb->item(rowNum,0)->text();
         QString eventDate = qobject_cast<QDateEdit*>(tb->cellWidget(rowNum,1))->date().toString("yyyy-MM-dd");
         event.insert("eventName",eventName);
-        event.insert("time",eventDate);
+        event.insert("eventDate",eventDate);
 
         _events.append(event);
     }
