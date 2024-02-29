@@ -14,6 +14,7 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+    void restart();
 
 private:
     Ui::Widget *ui;

@@ -16,7 +16,6 @@
 
 const int padding = 10;
 
-QVector<EventWidget*> eventWidgetVector;
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -57,7 +56,10 @@ Widget::Widget(QWidget *parent)
 
     timer->start(60000);
 
+}
 
+void Widget::restart(){
+    qApp->exit(312);
 }
 
 Widget::~Widget()
