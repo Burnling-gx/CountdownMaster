@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Widget</class>
- <widget class="QWidget" name="Widget">
+ <class>ConfigEditorDialog</class>
+ <widget class="QDialog" name="ConfigEditorDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>410</width>
-    <height>650</height>
+    <height>700</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -19,15 +19,15 @@
   <property name="maximumSize">
    <size>
     <width>410</width>
-    <height>650</height>
+    <height>700</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>CountdownMaster-Configurator</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>logo.ico</normaloff>logo.ico</iconset>
+   <iconset resource="res.qrc">
+    <normaloff>:/ico/configurator_icon.ico</normaloff>:/ico/configurator_icon.ico</iconset>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -290,9 +290,9 @@
   <widget class="QPushButton" name="pushButton_save">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>600</y>
-     <width>110</width>
+     <x>9</x>
+     <y>650</y>
+     <width>391</width>
      <height>40</height>
     </rect>
    </property>
@@ -305,13 +305,16 @@
    <property name="text">
     <string>保存更改</string>
    </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
   </widget>
   <widget class="QPushButton" name="pushButton_new">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>600</y>
-     <width>130</width>
+     <width>190</width>
      <height>40</height>
     </rect>
    </property>
@@ -324,13 +327,16 @@
    <property name="text">
     <string>添加事件</string>
    </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
   </widget>
   <widget class="QPushButton" name="pushButton_del">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>210</x>
      <y>600</y>
-     <width>130</width>
+     <width>190</width>
      <height>40</height>
     </rect>
    </property>
@@ -343,9 +349,14 @@
    <property name="text">
     <string>删除事件</string>
    </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>slider_left</sender>

@@ -8,6 +8,7 @@
 #include <QJsonObject>
 #include <QPalette>
 #include "_event.h"
+#include "eventwidget.h"
 
 extern int screenWidth;
 extern int screenHeight;
@@ -19,9 +20,9 @@ extern double heightFactor;
 extern double itemHeightFactor;
 
 extern QVector<_Event> eventVector;
+extern QVector<EventWidget*> eventWidgetVector;
 
 void init_functions();
 void saveJsonFile(QJsonDocument);
 
 #endif // GLOBALDATA_H
-

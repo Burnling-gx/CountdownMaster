@@ -21,6 +21,7 @@ double heightFactor;
 double itemHeightFactor;
 
 QVector<_Event> eventVector;
+QVector<EventWidget*> eventWidgetVector;
 
 bool createDefaultJsonFile(QFile &file) {
     if (!file.open(QIODevice::WriteOnly)) {
@@ -54,8 +55,13 @@ bool createDefaultJsonFile(QFile &file) {
 }
 
 void parseEvents(const QJsonObject &rootObject) {
+
+    eventVector.clear();
+
     QJsonArray eventsArray = rootObject.value("events").toArray();
     int cnt = 0;
+
+    qDebug() << "eventsArray: " << eventsArray;
 
     for (const auto &event : eventsArray) {
         QJsonObject eventObject = event.toObject();
@@ -102,6 +108,7 @@ void initJson() {
 
     QJsonObject rootObject = doc.object();
 
+
     parseEvents(rootObject);
     parseWindowParams(rootObject);
 }
@@ -114,6 +121,24 @@ void initGlobalValue(){
 
     screenWidth = screenGeometry.width();
     screenHeight = screenGeometry.height();
+}
+
+void saveJsonFile(QJsonDocument doc){
+
+
+    QFile jsonFile("events.json");
+
+    if (!jsonFile.open(QIODevice::WriteOnly)) {
+        qDebug() << "Failed to create or open events.json for writing.";
+        return;
+    }
+
+    QTextStream stream(&jsonFile);
+
+    stream << doc.toJson();
+    qDebug() << doc.toJson();
+    jsonFile.close();
+
 }
 
 void init_functions(){

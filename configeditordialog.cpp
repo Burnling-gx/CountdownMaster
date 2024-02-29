@@ -1,5 +1,5 @@
-#include "widget.h"
-#include "ui_widget.h"
+#include "configeditordialog.h"
+#include "ui_configeditordialog.h"
 #include "globaldata.h"
 
 #include <QDebug>
@@ -15,12 +15,13 @@
 #include <QJsonParseError>
 #include <QJsonArray>
 
-Widget::Widget(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::Widget)
+ConfigEditorDialog::ConfigEditorDialog(QWidget *parent)
+    : QDialog(parent)
+    , ui(new Ui::ConfigEditorDialog)
 {
     ui->setupUi(this);
-    init_functions();
+
+    // init_functions();
 
     int eventWidgetWidth = 100 * widthFactor;
     int eventWidgetLeft = 100 * leftFactor;
@@ -37,6 +38,8 @@ Widget::Widget(QWidget *parent)
     int eventId = 0;
 
     for(auto _event : eventVector){
+        qDebug() << "_event: " << _event.eventName;
+
         ui->tableWidget->insertRow(eventId);
 
         QTableWidgetItem *_item_eventName = new QTableWidgetItem(_event.eventName);
@@ -50,15 +53,14 @@ Widget::Widget(QWidget *parent)
 
         eventId++;
     }
-
 }
 
-Widget::~Widget()
+ConfigEditorDialog::~ConfigEditorDialog()
 {
     delete ui;
 }
 
-void Widget::on_pushButton_save_clicked()
+void ConfigEditorDialog::on_pushButton_save_clicked()
 {
     QJsonObject _window;
     QJsonArray _events;
@@ -97,7 +99,7 @@ void Widget::on_pushButton_save_clicked()
 
 }
 
-void Widget::on_pushButton_new_clicked()
+void ConfigEditorDialog::on_pushButton_new_clicked()
 {
     int eventNum = ui->tableWidget->rowCount();
     ui->tableWidget->insertRow(eventNum);
@@ -112,10 +114,9 @@ void Widget::on_pushButton_new_clicked()
     ui->tableWidget->setCellWidget(eventNum,1,dateEdit);
 }
 
-void Widget::on_pushButton_del_clicked()
+void ConfigEditorDialog::on_pushButton_del_clicked()
 {
     int nowRow = ui->tableWidget->currentRow();
     ui->tableWidget->removeRow(nowRow);
 }
-
 
