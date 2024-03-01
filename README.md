@@ -46,9 +46,9 @@
 
 ### 1.6 版本信息
 
-- **当前版本：** 2.0.0
+- **当前版本：** 2.1
 
-- **发布日期：** 2024-02-07
+- **发布日期：** 2024-03-01
 
 ### 1.7 开源许可
 
@@ -61,9 +61,9 @@
 
 ### 2.1 下载安装包
 
-最新版安装包可从网盘下载：[网盘链接](https://wwb.lanzoul.com/b00s6ol3i) 密码：52pj
+v2.0 版本安装包可从网盘下载：[网盘链接](https://wwb.lanzoul.com/b00s6ol3i) 密码：52pj
 
-也可以从 [Github Release](https://github.com/Burnling-gx/CountdownMaster/releases/tag/v2.0) 页面下载。
+最新版本可以从 [Github Release](https://github.com/Burnling-gx/CountdownMaster/releases/tag/v2.1) 页面下载。
 
 建议下载 `setup.exe` ，可以直接设置开机自启。
 
@@ -78,7 +78,7 @@
 
 双击 `CountdownMaster.exe` 即可启动程序。程序启动后，会在桌面上显示倒数日信息。
 
-如果要编辑事件、设置位置等，请双击 `CountdownMaster-Configurator.exe` 以进行配置。
+如果要编辑事件、设置位置等，请右键托盘图标，选择 “打开设置” 以进行配置。
 
 ### 3.2 添加新事件
 
