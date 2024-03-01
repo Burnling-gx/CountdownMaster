@@ -43,6 +43,12 @@ Widget::Widget(QWidget *parent)
         eventWidget->setEvent(_event);
 
         eventWidget->updateEventCountdown();
+
+        if(eventWidget->countdown < 0){
+            delete eventWidget;
+            continue;
+        }
+
         eventWidgetVector.append(eventWidget);
         eventId++;
     }

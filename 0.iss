@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "CountdownMaster"
-#define MyAppVersion "2.0"
+#define MyAppVersion "2.1"
 #define MyAppPublisher "Burnling"
 #define MyAppURL "https://github.com/Burnling-gx/CountdownMaster"
 #define MyAppExeName "CountdownMaster.exe"
@@ -23,9 +23,8 @@ DefaultGroupName={#MyAppName}
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputDir=F:\Mycode\Qt\pac
+OutputDir=G:\mycode\Qt\打包区\CountdownMaster\
 OutputBaseFilename=setup
-SetupIconFile=F:\Mycode\Qt\CountdownMaster\CountdownMaster\logo.ico
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
@@ -39,8 +38,8 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "autostarticon"; Description: "{cm:AutoStartProgram,{#MyAppName}}"; GroupDescription: "{cm:AdditionalIcons}";
 
 [Files]
-Source: "F:\Mycode\Qt\gen\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "F:\Mycode\Qt\gen\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "G:\mycode\Qt\打包区\CountdownMaster\CountdownMaster-v2.1\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "G:\mycode\Qt\打包区\CountdownMaster\CountdownMaster-v2.1\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
