@@ -27,6 +27,13 @@ public:
     bool bold_eventName;
     bool bold_eventCountdown;
 
+    // bool shadow_enabled;
+    // int shadow_offset_x;
+    // int shadow_offset_y;
+    // int shadow_blur_radius;
+    // QColor shadow_color;
+
+    QString otherStylesheet;
     int eventId;
 
     void initializeDefaults();

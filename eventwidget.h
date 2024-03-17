@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QLabel>
+#include <QGraphicsDropShadowEffect>
+
 #include "_event.h"
 
 class EventWidget : public QWidget

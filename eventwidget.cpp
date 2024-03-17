@@ -76,10 +76,19 @@ void EventWidget::updateEventCountdown(){
     this->label_eventName->setPalette(pt_eventName);
     this->label_eventCountdown->setPalette(pt_eventCountdown);
 
-    QString stylesheet = QString("QWidget[special=\"true\"]{background-color:%1; border: %2; border-radius: 10px;}").arg(event.backgroundColor.name(QColor::HexArgb)).arg(event.widget_border);
+    QString stylesheet = QString("QWidget[special=\"true\"]{background-color:%1; border: %2; border-radius: 10px; %3}").arg(event.backgroundColor.name(QColor::HexArgb)).arg(event.widget_border).arg(event.otherStylesheet);
     qDebug() << stylesheet;
 
     this->eventWidget->setStyleSheet(stylesheet);
 
+    // QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
+    // shadow->setEnabled(this->event.shadow_enabled);
+    // shadow->setBlurRadius(this->event.shadow_blur_radius);
+    // shadow->setXOffset(this->event.shadow_offset_x);
+    // shadow->setYOffset(this->event.shadow_offset_y);
+    // shadow->setColor(this->event.shadow_color);
+
+    // this->eventWidget->setGraphicsEffect(shadow);
+    // this->eventWidget->setContentsMargins(1,1,1,1);
 
 }
